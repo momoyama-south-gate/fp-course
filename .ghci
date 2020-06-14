@@ -1,3 +1,5 @@
+:l src/Course.hs spec/Test/Loader.hs
+:m + Test.Loader
 :set prompt "\ESC[34mλ= \ESC[m"
 :set -Wall
 :set -fno-warn-unused-binds
@@ -8,3 +10,5 @@
 :set -XScopedTypeVariables
 :set -XOverloadedStrings
 :set -XRebindableSyntax
+:def testModule (\arg -> Prelude.return Prelude.$ Prelude.unlines [":reload", "test test_" Prelude.++ arg])
+:def testFunction (\arg -> Prelude.return Prelude.$ Prelude.unlines [":reload", "test " Prelude.++ arg Prelude.++ "Test"])

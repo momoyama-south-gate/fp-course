@@ -1,4 +1,2 @@
-package = fp-course
-
 repl:
-	stack repl $(package)
+	stack repl --no-load
