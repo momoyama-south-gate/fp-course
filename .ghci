@@ -1,9 +1,4 @@
-:set -isrc
-:set -package time
-:set -package containers
-:l src/Course.hs src/Test/Loader.hs
-:m + Test.Loader
-:set prompt ">> "
+:set prompt "\ESC[34mλ= \ESC[m"
 :set -Wall
 :set -fno-warn-unused-binds
 :set -fno-warn-unused-do-bind
@@ -13,4 +8,3 @@
 :set -XScopedTypeVariables
 :set -XOverloadedStrings
 :set -XRebindableSyntax
-:def test (\arg -> Prelude.return Prelude.$ Prelude.unlines [":reload", "test " Prelude.++ arg])

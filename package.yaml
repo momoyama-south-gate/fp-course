@@ -1,0 +1,10 @@
+name: fp-course
+
+library:
+  source-dirs:
+  - spec
+  - src
+  dependencies:
+  - base
+  - containers
+  - time
